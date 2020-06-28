@@ -14,7 +14,7 @@
             <ul class="nav-items">
                 <li class="brand">
                     <img style="width: 50px" src="assets/logo.png" />
-                    <h1>Battlr</h1>
+                    <h1 styl>Battlr</h1>
                 </li>
                 <li class="nav-items items">
                     <ul>
@@ -56,7 +56,7 @@
                 <div>
                     <p style="color: dimgrey;font-size: 10px;margin-top: 10px">
                         **This is a non stable release.<br>
-                        Please report if you find any bugs 🐞
+                        Please feel free to report bugs 🐞
                     </p>
                 </div>
             </div>
@@ -73,58 +73,68 @@
         </div>
     </div>
 
-    <div class="features">
-        <div class="features_card">
-            <div class="features_card-image">
-                <img src="./assets/onboard3.png" alt="onboard1" />
-            </div>
-            <div class="features_card-body">
-                <div class="features_card-summary">
-                    <h3>Find Free Room Matches</h3>
+    <section id="features">
+        <h1 class="subtitle">About</h1>
+        <div class="features">
+            <div class="features_card">
+                <div class="features_card-image">
+                    <img src="./assets/onboard3.png" alt="onboard1" />
                 </div>
-                <div class="features_card-para">
-                    <p>
-                        Find Room matches for free, send request, get room credentials and squad up .
-                    </p>
+                <div class="features_card-body">
+                    <div class="features_card-summary">
+                        <h3>Find Free Room Matches</h3>
+                    </div>
+                    <div class="features_card-para">
+                        <p>
+                            Find Room matches for free, send request, get room credentials and squad up .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="features_card">
+                <div class="features_card-image">
+                    <img src="./assets/onboard1.png" alt="onboard1" />
+                </div>
+                <div class="features_card-body">
+                    <div class="features_card-summary">
+                        <h3>Tag Up And Battle</h3>
+                    </div>
+                    <div class="features_card-para">
+                        <p>
+                            Join Clans and gang up with your friends.Send Invitations to them,
+                            Kick out players, and many more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="features_card">
+                <div class="features_card-image">
+                    <img src="./assets/onboard2.png" alt="onboard1" />
+                </div>
+                <div class="features_card-body">
+                    <div class="features_card-summary">
+                        <h3>Host Tournaments And Start To Earn</h3>
+                    </div>
+                    <div class="features_card-para">
+                        <p>
+                            Join a Clan , Host tournaments, Send tournament invitations to
+                            them, collect entry fee and start to earn.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="features_card">
-            <div class="features_card-image">
-                <img src="./assets/onboard1.png" alt="onboard1" />
-            </div>
-            <div class="features_card-body">
-                <div class="features_card-summary">
-                    <h3>Tag Up And Battle</h3>
-                </div>
-                <div class="features_card-para">
-                    <p>
-                        Join Clans and gang up with your friends.Send Invitations to them,
-                        Kick out players, and many more.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="features_card">
-            <div class="features_card-image">
-                <img src="./assets/onboard2.png" alt="onboard1" />
-            </div>
-            <div class="features_card-body">
-                <div class="features_card-summary">
-                    <h3>Host Tournaments And Start To Earn</h3>
-                </div>
-                <div class="features_card-para">
-                    <p>
-                        Join a Clan , Host tournaments, Send tournament invitations to
-                        them, collect entry fee and start to earn.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <div class="footer_body">
+    <section id="download">
+        <h1 class="subtitle">Download</h1>
+        <div class="download">
+            <div>
+                <p>🔰 If download hasn't started click the below download button to start downloading.</p>
+                <p>🔰 Navigate to your phone settings menu then to the security settings. Enable the Install from Unknown Sources option.</p>
+                <p>🔰 Use a file browser and navigate to your download folder. Tap the APK to begin the installation process.</p>
+                <p>🔰 The app should safely install.</p>
+            </div>
             <div class="download_button">
                 <div class="download_button-icon">
                     <p>∇</p>
@@ -136,7 +146,37 @@
             <div>
                 <p class="sub">v.1.0.0 beta</p>
             </div>
+            <p class="sub" style="margin-bottom: 20px;">
+                **Still confused on installing the app, try reading the article by Joe Hindy on <a href="www.androidauthority.com">www.androidauthority.com</a> on installing apps outside playstore by clicking
+                <a href='https://www.androidauthority.com/how-to-install-apks-31494/'>here</a> .
+            </p>
         </div>
+    </section>
+
+    <div class="footer">
+            
+        <!-- SUPPORT  -->
+        <div class="footer_body-support">
+            <p style="text-align: center;">We love hearing from you!📢<br> Found any bugs?🐞 or request for a Feature.🧡</p>
+            <form action="http://localhost:3000/feedback" method="post">
+            <textarea id="suggestions" minlength="20" maxlength="250" name="suggestions" rows="10" cols="10" placeholder="Any Suggestions?" style="padding: 10px;" required></textarea>
+            <input name="email" id="email" type="email" style="padding: 10px;" placeholder="Email" required>
+            <Button id="submit" type="submit">Send</Button>
+            </form>
+            <div class="donations">
+                <p>If you like our service, you can make donations to keep our service running.</p>
+                <div>
+                    <a href="#" style="text-decoration: none;">
+                        <img style="height: 30px" src="assets/patron.png" />
+                    </a>
+                    <a href="#" style="text-decoration: none;">
+                        <img style="height: 30px" src="assets/patron.png" />
+                    </a>
+                </div>
+                <p class="sub">*100% of your funds are used for Developement and Marketing of the App.</p>
+            </div>
+        </div>
+        <!-- FOOTER BAR -->
         <div class="footer_bar">
             <div class="footer_bar-brand">
                 <h1>Battlr 🔥</h1>
@@ -155,4 +195,6 @@
             </div>
         </div>
     </div>
-</body></html>
+    <script src="index.js"></script>
+</body>
+</html>
