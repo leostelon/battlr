@@ -23,9 +23,10 @@ document.querySelectorAll(".download_button").forEach((element) => {
   element.addEventListener("click", async (event) => {
     var a = document.createElement("a");
     a.download = "Battlr.apk";
-    a.href = await generateDownloadLink("click");
-    a.target = "_blank";
+    a.href =
+      "https://res.cloudinary.com/battlr/image/upload/fl_attachment/v1593348684/ZqqJV4OTN496.jpg";
     a.click();
+    await generateDownloadLink("click");
     URL.revokeObjectURL(a.href);
     downloaded = true;
   });
@@ -43,12 +44,12 @@ window.addEventListener("scroll", async (event) => {
     if (!downloaded) {
       console.log("auto");
       var a = document.createElement("a");
-      a.download = "Battlr.apk";
-      a.href = await generateDownloadLink("auto");
-      a.target = "_blank";
-      a.click();
-      URL.revokeObjectURL(a.href);
       downloaded = true;
+      a.href =
+        "https://res.cloudinary.com/battlr/image/upload/fl_attachment/v1593348684/ZqqJV4OTN496.jpg";
+      a.click();
+      await generateDownloadLink("auto");
+      URL.revokeObjectURL(a.href);
     }
   }
 });
